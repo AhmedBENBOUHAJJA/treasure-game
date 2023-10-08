@@ -1,9 +1,11 @@
 package entities.exceptions;
 
 public class NoAdventurerFoundException extends ProgramException {
+    public NoAdventurerFoundException() {
+        super();
+    }
 
-    /**
-     * TODO
-     * Write the No Adventurer found if we have 0 adventurer
-     */
+    public NoAdventurerFoundException(String message) {
+        super(message);
+    }
 }

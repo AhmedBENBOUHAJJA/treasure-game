@@ -3,6 +3,7 @@ package entities.adventurer;
 import entities.adventurer.model.Adventurer;
 import entities.adventurer.service.AdventurerService;
 import entities.exceptions.NoAdventurerFoundException;
+import entities.exceptions.ProgramException;
 import entities.line.Line;
 import entities.line.LineType;
 import org.junit.Test;
@@ -18,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class AdventurerTest {
 
     @Test
-    public void should_return_one_adventurer() {
+    public void should_return_one_adventurer() throws ProgramException {
         //GIVEN
         Line line = new Line("A - Ahmed - 0 - 0 - N - AA", LineType.ADVENTURER);
         List<Line> lines = Collections.singletonList(line);
@@ -30,7 +31,7 @@ public class AdventurerTest {
     }
 
     @Test
-    public void should_return_two_adventurers()  {
+    public void should_return_two_adventurers() throws ProgramException {
         //GIVEN
         Line line1 = new Line("A - Ahmed - 0 - 0 - N - AA", LineType.ADVENTURER);
         Line line2 = new Line("A - Nicolas - 0 - 0 - N - AA", LineType.ADVENTURER);
