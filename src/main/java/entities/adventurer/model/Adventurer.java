@@ -23,11 +23,48 @@ public class Adventurer {
         this.movements = movements;
         this.discoveredTreasures = discoveredTreasures;
     }
+
+    public Adventurer() {
+
+    }
+
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Coordinates getCoordinates() {
+        return coordinates;
+    }
+
+    public void setCoordinates(Coordinates coordinates) {
+        this.coordinates = coordinates;
+    }
+
+    public AdventurerDirection getAdventurerDirection() {
+        return adventurerDirection;
+    }
+
+    public void setAdventurerDirection(AdventurerDirection adventurerDirection) {
+        this.adventurerDirection = adventurerDirection;
+    }
+
+    public List<AdventurerMovement> getMovements() {
+        return movements;
+    }
+
+    public void setMovements(List<AdventurerMovement> movements) {
+        this.movements = movements;
+    }
+
+    public int getDiscoveredTreasures() {
+        return discoveredTreasures;
+    }
+
+    public void setDiscoveredTreasures(int discoveredTreasures) {
+        this.discoveredTreasures = discoveredTreasures;
     }
 }
