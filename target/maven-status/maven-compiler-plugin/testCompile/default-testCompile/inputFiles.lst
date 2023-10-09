@@ -1,8 +1,8 @@
 C:\Users\Azus\workSpace\treasure-game\src\test\java\entities\adventurer\AdventurerMovementsTest.java
 C:\Users\Azus\workSpace\treasure-game\src\test\java\entities\adventurer\AdventurerTest.java
-C:\Users\Azus\workSpace\treasure-game\src\test\java\entities\inputFile\FileReader.java
-C:\Users\Azus\workSpace\treasure-game\src\test\java\entities\map\MapSize.java
-C:\Users\Azus\workSpace\treasure-game\src\test\java\entities\outputFile\FileWriter.java
+C:\Users\Azus\workSpace\treasure-game\src\test\java\entities\commandLines\CommandLinesTest.java
+C:\Users\Azus\workSpace\treasure-game\src\test\java\entities\outputFile\FileWriterTest.java
 C:\Users\Azus\workSpace\treasure-game\src\test\java\entities\adventurer\AdventurerActionsTest.java
-C:\Users\Azus\workSpace\treasure-game\src\test\java\entities\commandLines\CommandLines.java
 C:\Users\Azus\workSpace\treasure-game\src\test\java\entities\coordinates\MapCoordinatesTest.java
+C:\Users\Azus\workSpace\treasure-game\src\test\java\entities\inputFile\FileReaderTest.java
+C:\Users\Azus\workSpace\treasure-game\src\test\java\entities\map\MapSizeTest.java
