@@ -11,6 +11,13 @@ public class MapSize {
     public MapSize() {
     }
 
+    public MapSize(int posX, int posY, Boolean isMountain, Adventurer adventurer) {
+        this.posX = posX;
+        this.posY = posY;
+        this.isMountain = isMountain;
+        this.adventurer = adventurer;
+    }
+
     public MapSize(int x, int y) {
         this.posX = x;
         this.posY = y;
