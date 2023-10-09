@@ -7,15 +7,17 @@ public class MapSize {
     private int posY;
     private Boolean isMountain;
     private Adventurer adventurer;
+    private int treasures;
 
     public MapSize() {
     }
 
-    public MapSize(int posX, int posY, Boolean isMountain, Adventurer adventurer) {
+    public MapSize(int posX, int posY, Boolean isMountain, Adventurer adventurer, int treasures) {
         this.posX = posX;
         this.posY = posY;
         this.isMountain = isMountain;
         this.adventurer = adventurer;
+        this.treasures = treasures;
     }
 
     public MapSize(int x, int y) {
@@ -55,5 +57,13 @@ public class MapSize {
 
     public void setAdventurer(Adventurer adventurer) {
         this.adventurer = adventurer;
+    }
+
+    public int getTreasures() {
+        return treasures;
+    }
+
+    public void setTreasures(int treasures) {
+        this.treasures = treasures;
     }
 }

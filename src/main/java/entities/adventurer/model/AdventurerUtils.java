@@ -1,5 +1,6 @@
 package entities.adventurer.model;
 
+import entities.coordinates.Coordinates;
 import entities.exceptions.NoDirectionFoundException;
 import entities.exceptions.UnexpectedMovementException;
 
@@ -29,6 +30,30 @@ public class AdventurerUtils {
                 return AdventurerAction.MOVE_RIGHT;
         }
         throw new UnexpectedMovementException("An adventurer's movement is not correctly recorded.");
+    }
+
+    public static Coordinates getNextAdventurerCoordinates(Adventurer adventurer) {
+        Coordinates nextCoordinates = new Coordinates();
+        Coordinates adventurerCoordinates = adventurer.getCoordinates();
+        switch (adventurer.getAdventurerDirection()) {
+            case NORTH:
+                nextCoordinates.setOrdinatesAxis(adventurerCoordinates.getOrdinatesAxis() - 1);
+                nextCoordinates.setAbscissasAxis(adventurerCoordinates.getAbscissasAxis());
+                break;
+            case SOUTH:
+                nextCoordinates.setOrdinatesAxis(adventurerCoordinates.getOrdinatesAxis() + 1);
+                nextCoordinates.setAbscissasAxis(adventurerCoordinates.getAbscissasAxis());
+                break;
+            case EAST:
+                nextCoordinates.setOrdinatesAxis(adventurerCoordinates.getOrdinatesAxis());
+                nextCoordinates.setAbscissasAxis(adventurerCoordinates.getAbscissasAxis() + 1);
+                break;
+            case WEST:
+                nextCoordinates.setOrdinatesAxis(adventurerCoordinates.getOrdinatesAxis());
+                nextCoordinates.setAbscissasAxis(adventurerCoordinates.getAbscissasAxis() - 1);
+                break;
+        }
+        return nextCoordinates;
     }
 
 }
